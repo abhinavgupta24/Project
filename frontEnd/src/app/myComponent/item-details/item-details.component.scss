@@ -1,0 +1,16 @@
+$primitive-family:"Impact";
+$secondary-family:"Verdana";
+h3{
+  font-family: $primitive-family;
+  background-color: khaki;
+}
+
+div{
+  div{
+    label{
+      font-family: $primitive-family;
+    }
+    font-family:  $secondary-family;
+  }
+  background-color:greenyellow;
+}

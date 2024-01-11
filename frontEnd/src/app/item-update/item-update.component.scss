@@ -1,0 +1,14 @@
+$primary-color: greenyellow;
+$primary-style:"Verdana"
+;div{
+    form{
+        div{
+            label{
+                color: $primary-color;
+                font-family: $primary-style;
+                font-weight: bolder;
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,22 @@
+$primary-style:'Impact';
+$primary-color: deeppink;
+$secondary-style:'Georgia';
+div{
+    form{
+        div{
+            label{
+                font-family:$primary-style;
+                color: $primary-color;
+            }
+            input{
+                font-family:$secondary-style ;
+            }
+            div{
+                div{
+                    background-color:rgb(238, 46, 46);
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}

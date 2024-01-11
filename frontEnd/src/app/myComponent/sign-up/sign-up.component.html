@@ -1,0 +1,44 @@
+<div class="container">
+  <form [formGroup]="signUp" (ngSubmit)="signupdata(signUp)">
+    <h3>Signup</h3>
+    <div class="form-group">
+      <label>Name</label>
+      <input
+        type="text"
+        formControlName="userName"
+        class="form-control mb-3 mt-3"
+        placeholder="Enter full Name"
+      />
+    </div>
+    <div class="form-group">
+      <label>Gmail</label>
+      <input
+        type="text"
+        formControlName="userGmail"
+        class="form-control mb-3 mt-3"
+        placeholder="Enter gmail"
+      />
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input
+        type="password"
+        formControlName="userPass"
+        class="form-control mb-3 mt-3"
+        placeholder="Password"
+      />
+    </div>
+    <div class="form-group">
+      <label>Phone</label>
+      <input
+        type="number"
+        formControlName="userPhone"
+        class="form-control mb-3 mt-3"
+        placeholder="Enter 10 digit mobile number"
+      />
+    </div>
+    <span>Already has account <a routerLink="/login">Login</a></span>
+    <br />
+    <button type="submit" class="btn btn-success">Register</button>
+  </form>
+</div>

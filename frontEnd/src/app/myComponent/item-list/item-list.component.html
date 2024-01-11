@@ -1,0 +1,42 @@
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Description</th>
+        <th>product Price</th>
+        <th>Modify</th>
+        <th>Remove</th>
+        <th>Info</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <td>{{ item.productId }}</td>
+        <td>{{ item.productName }}</td>
+        <td>{{ item.productDesc }}</td>
+        <td>{{ item.productPrice }}</td>
+        <td>
+          <button (click)="updateItem(item.productId)" class="btn btn-primary">
+            Update
+          </button>
+        </td>
+        <td>
+          <button (click)="deleteItem(item.productId)" class="btn btn-danger">
+            Delete
+          </button>
+        </td>
+        <td>
+          <button (click)="itemDetails(item.productId)" class="btn btn-light">
+            view
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <mat-paginator
+    [pageSizeOptions]="[25, 50, 100]"
+    showFirstLastButtons
+  ></mat-paginator>
+</div>
