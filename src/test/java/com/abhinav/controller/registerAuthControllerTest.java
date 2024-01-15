@@ -21,7 +21,7 @@ import static org.mockito.ArgumentMatchers.any;
 import com.abhinav.model.RegisterAuth;
 import com.abhinav.repository.RegisterAuthRepository;
 
-class registerAuthControllerTest<RegisterAuthController> {
+class RegisterAuthControllerTest {
 
     private MockMvc mockMvc;
 
@@ -31,6 +31,7 @@ class registerAuthControllerTest<RegisterAuthController> {
     @Mock
     private RegisterAuthController registerAuthController;
 
+	@SuppressWarnings("deprecation")
 	@BeforeEach
     void setUp() {
         MockitoAnnotations.initMocks(this);

@@ -15,7 +15,6 @@ public class RegisterAuthServiceImplementation implements RegisterAuthService{
 	@Override
 	public RegisterAuth newUser(RegisterAuth person) {
 		RegisterAuth user=new RegisterAuth();
-//		user.setUserUID(person.getUserUID());
 		user.setUserGmail(person.getUserGmail());
 		user.setUserName(person.getUserName());
 		user.setUserPass(person.getUserPass());

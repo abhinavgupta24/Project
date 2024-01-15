@@ -66,11 +66,4 @@ public class EntityServiceImplementationTest {
 
         assertEquals(2, entityService.findAllItem().size());
     }
-
-//    @Test
-//    public void testFindProductWithSorting() {
-//        when(itemRepository.findAll(Sort.by(Sort.Direction.ASC))).thenReturn(Arrays.asList(new ItemEntity(), new ItemEntity()));
-//
-//        assertEquals(2, entityService.findProductWithSorting("field").size());
-//    }
 }

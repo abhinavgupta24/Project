@@ -15,7 +15,7 @@ import com.abhinav.service.EntityService;
 
 @RestController
 @RequestMapping("/api/item")
-public class entityCrudController {
+public class EntityCrudController {
 	
 	@Autowired
 	private EntityService entityService;

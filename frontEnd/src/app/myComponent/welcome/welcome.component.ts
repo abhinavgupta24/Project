@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent implements OnInit {
-  
-  constructor() { }
+
+  greeting: any;
+  constructor() { 
+    setTimeout(() => {
+      this.greeting=", to MyApp";
+    }, 1000);
+  }
 
   ngOnInit(): void {
   }

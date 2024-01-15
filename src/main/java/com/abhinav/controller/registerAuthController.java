@@ -14,7 +14,7 @@ import com.abhinav.repository.RegisterAuthRepository;
 
 @RestController
 @RequestMapping
-public class registerAuthController {
+public class RegisterAuthController {
 	@Autowired
 	private RegisterAuthRepository registerAuthRepo;
 	
